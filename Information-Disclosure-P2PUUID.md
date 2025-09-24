@@ -2,7 +2,7 @@
 
 - Furbo Mini
 - Furbo 360
-- 
+  - GATT Characteristic UUID: 2E2F1C66-ACE9-46AA-A993-641FCE7A5C9C
 #### Impact:
 
 An attacker within Bluetooth Low Energy (BLE) range of the Furbo Mini device can issue GATT read requests to a specific characteristic exposed by the device. This characteristic leaks the `p2puuid`—a unique identifier used by the Furbo backend infrastructure for video stream routing. By adding the Victim P2P ID to the attacker device and then removing the default p2p_auth file new credentials to be generated for the victim's p2p ID and the attacker stream's will replace the victim's stream in the victim's mobile app.
